@@ -5,5 +5,5 @@ services:
 before_install:
   - docker build -t ladis/docker-react -f Dockerfile.dev .
 
-  script:
-    - docker run ladis/docker-react npm run test -- --coverage
+script:
+  - docker run ladis/docker-react npm run test -- --coverages
